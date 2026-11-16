@@ -1,57 +1,90 @@
 # Detecção de Trocadilhos em Português
 
-Projeto de Inteligência Artificial desenvolvido como parte da avaliação N3, com o objetivo de explorar técnicas de **Aprendizado de Máquina (Machine Learning)** e **Processamento de Linguagem Natural (PLN)** para identificar trocadilhos em textos escritos em português.
+Projeto acadêmico de Inteligência Artificial desenvolvido como parte da avaliação **N3**, com foco na aplicação de técnicas de Aprendizado de Máquina (*Machine Learning*) e Processamento de Linguagem Natural (PLN) para identificação e classificação de trocadilhos em textos escritos em português.
 
 ## Sobre o Projeto
 
-O projeto consiste no desenvolvimento de um modelo de Inteligência Artificial capaz de analisar textos em língua portuguesa e classificá-los quanto à presença de trocadilhos.
+O objetivo deste projeto é desenvolver um modelo de Inteligência Artificial capaz de identificar se determinado texto contém um trocadilho.
 
-A proposta está baseada na competição **Competição de Puns**, disponibilizada na plataforma Kaggle, cujo desafio é desenvolver algoritmos de aprendizado de máquina voltados à detecção de humor, especificamente por meio da identificação de trocadilhos.
+A proposta é baseada na competição **[Competição de Puns](https://www.kaggle.com/competitions/competicao-de-puns)**, disponibilizada na plataforma Kaggle, que propõe o desenvolvimento de algoritmos de aprendizado de máquina para a detecção de humor na língua portuguesa, especificamente por meio da identificação de trocadilhos.
 
 ## Objetivos
 
-- Desenvolver uma solução baseada em Inteligência Artificial para identificação de trocadilhos.
-- Explorar técnicas de Processamento de Linguagem Natural aplicadas à língua portuguesa.
-- Realizar análise e preparação dos dados textuais.
-- Aplicar algoritmos de Aprendizado de Máquina para classificação de textos.
-- Avaliar o desempenho do modelo utilizando métricas de classificação.
+- Desenvolver um modelo de classificação de textos utilizando técnicas de Inteligência Artificial.
+- Explorar métodos de Processamento de Linguagem Natural aplicados à língua portuguesa.
+- Analisar e preparar dados textuais para treinamento de modelos.
+- Identificar padrões linguísticos associados à construção de trocadilhos.
+- Treinar e avaliar algoritmos de Aprendizado de Máquina.
+- Analisar o desempenho dos modelos na tarefa de classificação.
 
-## Tecnologias e Conceitos
+## Base de Dados
 
-O projeto está relacionado aos seguintes conceitos e áreas:
+O projeto utiliza o **Puntuguese**, um corpus de textos contendo trocadilhos em português brasileiro e europeu.
 
-- **Inteligência Artificial:** aplicação de técnicas computacionais para resolver problemas de classificação.
-- **Machine Learning:** treinamento de modelos capazes de identificar padrões nos dados.
-- **Processamento de Linguagem Natural (PLN):** análise e interpretação de textos em português.
-- **Classificação de Textos:** identificação da presença de trocadilhos em conteúdos textuais.
+Os dados foram coletados e selecionados manualmente a partir de três fontes:
 
-As bibliotecas, ferramentas e tecnologias utilizadas serão documentadas conforme a implementação do projeto.
+- Blog *Maiores e Melhores*;
+- Página do Instagram *O Sagrado Caderno das Piadas Secas*;
+- *UTC – Ultimate Trocadilho Challenge*, dos Castro Brothers, no YouTube.
 
-## Desenvolvimento
+### Características do dataset
 
-O desenvolvimento da solução envolve etapas como:
+| Característica | Informação |
+|---|---|
+| Nome | Puntuguese |
+| Conteúdo | Trocadilhos em português |
+| Idiomas | Português brasileiro e europeu |
+| Quantidade de arquivos | 3 |
+| Formatos | JSONL e CSV |
+| Tamanho | Aproximadamente 1,25 MB |
+| Licença informada | MIT |
 
-1. **Análise dos dados:** exploração e compreensão da base de dados disponibilizada para o desafio.
-2. **Pré-processamento:** preparação e tratamento dos dados textuais.
-3. **Representação textual:** transformação dos textos em formatos adequados para os algoritmos de aprendizado de máquina.
-4. **Treinamento:** desenvolvimento e treinamento dos modelos de classificação.
-5. **Avaliação:** análise dos resultados por meio de métricas de desempenho.
-6. **Predição:** utilização do modelo para identificar trocadilhos em novos textos.
+### Estrutura dos dados
+
+Os registros apresentam informações utilizadas no processamento e na classificação dos textos, incluindo:
+
+- `id`: identificador do registro;
+- `text`: conteúdo textual;
+- `label`: classificação associada ao texto;
+- `tokens`: palavras e elementos resultantes da tokenização;
+- `labels`: informações de rotulação em nível de token.
+
+## Etapas de Desenvolvimento
+
+O desenvolvimento da solução contempla as seguintes etapas:
+
+1. **Análise exploratória:** compreensão da estrutura, características e distribuição dos dados.
+2. **Pré-processamento textual:** preparação e tratamento dos textos.
+3. **Tokenização:** divisão dos textos em unidades linguísticas.
+4. **Representação textual:** transformação dos dados em representações adequadas para os algoritmos.
+5. **Treinamento:** aplicação de algoritmos de aprendizado de máquina.
+6. **Avaliação:** análise do desempenho dos modelos por meio de métricas de classificação.
+7. **Predição:** identificação de possíveis trocadilhos em novos textos.
+
+## Conceitos Aplicados
+
+- Inteligência Artificial;
+- Machine Learning;
+- Processamento de Linguagem Natural (PLN);
+- Classificação de textos;
+- Tokenização;
+- Análise de dados;
+- Aprendizado supervisionado.
 
 ## Resultados
 
-Os resultados serão documentados conforme a evolução dos experimentos, considerando o desempenho dos modelos e sua capacidade de identificar corretamente trocadilhos em português.
+Os resultados dos experimentos serão apresentados conforme o desenvolvimento do projeto, incluindo os modelos utilizados, métricas de avaliação e análises de desempenho.
 
 ## Contexto Acadêmico
 
-Este projeto foi desenvolvido como atividade avaliativa da **N3**, na área de Inteligência Artificial, proporcionando a aplicação prática de conceitos de Machine Learning e Processamento de Linguagem Natural em um problema de classificação textual.
+Este projeto foi desenvolvido como parte da avaliação N3, com o propósito de aplicar conhecimentos de Inteligência Artificial na resolução de um problema relacionado à compreensão e classificação de linguagem natural.
 
-## Referência
+## Referências
 
-- **Plataforma:** Kaggle
-- **Competição:** Competição de Puns
-- **Desafio:** Detecção de trocadilhos em textos escritos em português.
+- **Competição:** [Competição de Puns – Kaggle](https://www.kaggle.com/competitions/competicao-de-puns)
+- **Dataset:** Puntuguese.
+- **Área de aplicação:** Inteligência Artificial e Processamento de Linguagem Natural.
 
 ---
 
-Desenvolvido como parte de um projeto acadêmico de Inteligência Artificial.
+Desenvolvido para fins acadêmicos.
