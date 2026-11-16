@@ -42,7 +42,7 @@ O desenvolvimento da solução envolve etapas como:
 
 Os resultados serão documentados conforme a evolução dos experimentos, considerando o desempenho dos modelos e sua capacidade de identificar corretamente trocadilhos em português.
 
-## 🎓 Contexto Acadêmico
+## Contexto Acadêmico
 
 Este projeto foi desenvolvido como atividade avaliativa da **N3**, na área de Inteligência Artificial, proporcionando a aplicação prática de conceitos de Machine Learning e Processamento de Linguagem Natural em um problema de classificação textual.
 
